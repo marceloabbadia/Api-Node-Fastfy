@@ -9,7 +9,7 @@ export async function transactionsRoutes(app:FastifyInstance) {
   
   app.get('/', {
     preHandler:[checkSessionIdExists]
-  },async (request, reply)=>{
+  },async (request)=>{
   
     const {sessionId} = request.cookies
   
